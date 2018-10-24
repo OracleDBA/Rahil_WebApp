@@ -4,9 +4,9 @@ git credentialsId: 'Git-Creds', url: 'https://github.com/OracleDBA/Rahil_WebApp.
 }
 stage('Compile and Package Maven'){
   def MavenHome = tool name: 'Maven-3.5.4', type: 'maven'
-  def MavenBinary = "${MavenHome}/bin/mvn"
-  echo "${MavenHome}" 
-  echo "${MavenBinary}"
-  sh 'mvn compile'
+  def MavenBinary = "${MavenHome}\bin\mvn"
+  echo "Maven Installed on Windows ${MavenHome}" 
+  echo "Maven Binary on Windows ${MavenBinary}"
+ // sh "${MavenBinary} compile"
 }
 }
