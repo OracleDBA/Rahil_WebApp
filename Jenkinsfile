@@ -10,3 +10,5 @@ stage('Compile and Package Maven'){
    bat "${MavenBinary} compile"
 }
 }
+
+
