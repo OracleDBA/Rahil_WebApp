@@ -7,6 +7,6 @@ stage('Compile and Package Maven'){
   def MavenBinary = "${MavenHome}/bin/mvn"
   echo "Maven Installed on Windows ${MavenHome}" 
   echo "Maven Binary on Windows ${MavenBinary}"
- // sh "${MavenBinary} compile"
+   bat '"${MavenBinary} compile"'
 }
 }
